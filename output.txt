@@ -1,0 +1,9 @@
+Script started on Mon Oct 30 20:01:09 2023
+]0;milburnj@r1n00.darwin:~/picProj[?1034h[milburnj@r1n00 picProj]$ srun ,.  ./imagept pic1.jpg edge 5
+Took 5 seconds
+]0;milburnj@r1n00.darwin:~/picProj[milburnj@r1n00 picProj]$ srun ./imagept pic1.jpg edge 5[1P[1P[1@o[1@m[1@p
+Took 7 seconds
+]0;milburnj@r1n00.darwin:~/picProj[milburnj@r1n00 picProj]$ exit
+exit
+
+Script done on Mon Oct 30 20:01:51 2023
