@@ -1,6 +1,6 @@
-# Image Convolution Filters in C
+# Parallelizing Image Convolution Filters in C
 
-This project applies 2D convolution filters to images using both serial and parallel implementations in C. It supports several common image processing operations such as sharpening, blurring, edge detection, and embossing. The parallel implementation leverages OpenMP for improved performance on multi-core systems.
+This project implements a set of image convolution filters in C, with the goal of parallelizing a baseline serial implementation. It was developed as part of an assignment for CISC372, focusing on applying parallel programming techniques to image processing tasks.
 
 ## Features
 
@@ -12,10 +12,14 @@ This project applies 2D convolution filters to images using both serial and para
   - Emboss
   - Identity
 - Serial implementation: `image.c`
-- OpenMP parallel implementation: `imageomp.c`
+- Parallel implementation using OpenMP: `imageomp.c`
 - Supports `.jpg` input and outputs `.png` results
 - Uses `stb_image.h` and `stb_image_write.h` for image I/O
-- Includes sample images and output visualizations
+- Includes sample input images and output visualizations
+
+## Assignment Objective
+
+The original goal was to parallelize a serial image convolution pipeline using OpenMP. The serial version (`image.c`) serves as the baseline, and `imageomp.c` contains the parallelized version designed to reduce execution time on multi-core systems.
 
 ## Build & Run
 
@@ -33,10 +37,8 @@ make imageomp
 ./imageomp
 ```
 
-
 ## Notes
 
 - Requires a C compiler with OpenMP support (e.g., `gcc`).
 - Uses `stb_image.h` and `stb_image_write.h` (included) for minimal dependencies.
-- Designed for educational use, based on an assignment for CISC372.
-
+- Designed for instructional purposes in exploring serial-to-parallel performance improvements.
