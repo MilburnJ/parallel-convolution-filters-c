@@ -1,6 +1,6 @@
 # Parallelizing Image Convolution Filters in C
 
-This project implements a set of image convolution filters in C, with the goal of parallelizing a baseline serial implementation. It was developed as part of an assignment for CISC372, focusing on applying parallel programming techniques to image processing tasks.
+This project implements a set of image convolution filters in C, with the goal of parallelizing a baseline serial implementation. It focuses on applying parallel programming techniques to image processing tasks.
 
 ## Features
 
